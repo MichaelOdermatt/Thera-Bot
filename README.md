@@ -40,10 +40,11 @@ Source: https://docs.python.org/3/library/tkinter.html
 The unit tests were created using PyUnit. The unittest framkework was imported into the tes_bot.py file.
 Each unittest uses assert statements to verify if the output obtained is the one desired. Our unit tests use assertTrue to verify if a boolean statement returns a True value. The test will pass only if the value returned by the function is true.  Our  tests validate the get_response() function in the main.py file. The two first tests identify if the response of the ML model is within the accepted set of resposes provided in the intents.json file.  The final test verifies if the synonym identifier is working properly and uses asserTrue as well to verify the response. 
 
+### Incorporated API's 
 
+• Wikipedia API
 
-
-
+In the Individual Part of this assignment, I added implementation for Wikipedia’s Python API. The API is used to inform the users about certain metal and psychological conditions that they may be curious about. The API retrieves information from Wikipedia about these psychological conditions and displays it to the user.
 
 ### Features in this Assignment
 * Synonym Recognition (10 points) (see above for explanation)

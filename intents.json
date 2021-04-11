@@ -16,7 +16,7 @@
         },
         {"tag": "depression",
          "patterns": ["I am feeling depressed", "depression", "depressed","Im feeling depressed", "I feel empty", "I think I am depressed", "I am experiencing depression"],
-         "responses": ["Would you like to hear some techniques to deal with depression?", "Depression huh, would you like to hear some coping techniques?"],
+         "responses": ["Would you like to hear some info on depression?", "Depression huh, would you like to hear some information about it?"],
          "context_set": ""
         },
         {"tag": "name",
@@ -26,12 +26,12 @@
         },
         {"tag": "loneliness",
          "patterns": ["I feel alone", "I have no one to talk to", "Im lonely", "I have no friends", "I am experiencing loneliness", "Im alone"],
-         "responses": ["Would you like to hear some techniques to deal with loneliness?", "You can talk to me! Would you like some techniques to cope with loneliness?"],
+         "responses": ["Would you like to hear some info about loneliness?", "You can talk to me! Would you like some information on loneliness?"],
          "context_set": ""
         },
         {"tag": "stress",
          "patterns": ["Im stressed out", "Im very angry", "Im mad", "I am so stressed", "I am full of stress", "I hate this"],
-         "responses": ["Would you like to hear some techniques to deal with stress?", "Calm down! Would you like some techniques to cope with stress?"],
+         "responses": ["Would you like to hear some info on stress?", "Calm down! Would you like some info on stress?"],
          "context_set": ""
         },
         {"tag": "confirmation",
@@ -49,7 +49,7 @@
          "responses": ["No problem!", "Dont mention it!", "No worries!", "For sure!"],
          "context_set": ""
         },
-        {"tag": "explain",
+        {"tag": "request1",
          "patterns": ["i want to tell you something", "i need to tell you something", "i need to talk", "i have a problem", "ive got something on my chest", "can i tell you something"],
          "responses": ["Go ahead, I'm listening", "okay, I'm all ears.", "Please, tell me."],
          "context_set": ""
@@ -147,16 +147,6 @@
         {"tag": "help",
          "patterns": ["i need help", "i'm not okay", "help"],
          "responses": ["You should contact professional help!"],
-         "context_set": ""
-        },
-        {"tag": "becomeAPsychiatrist",
-         "patterns": ["is it hard to become a psychiatrist", "how can i become a psychiatrist", "can you help me become a psychiatrist", "what do i need to become a psychiatrist", "what is the best way to become a psychiatrist"],
-         "responses": ["To become a psychiatrist it usually takes at least 6 years, you will need your MD and a Diploma to be officially recognized."],
-         "context_set": ""
-        },
-        {"tag": "beingAPsychiatrist",
-         "patterns": ["what is it like to be a psychiatrist", "do you like being psychiatrist", "what is fun about being psychiatrist", "what is the worst part about being a psychiatrist"],
-         "responses": ["Being a psychiatrist can be stressful and fun at the same time. There is a always high earnings potential for psychiatrists and an excellent job market. However, the stress that can come from dealing with some clients may outweigh thoes benifits."],
          "context_set": ""
         },
         {"tag": "trauma",

@@ -1,6 +1,7 @@
 from trainer import *
 from synonym import *
 from BotActionChart import *
+import wikipedia
 #from GuiControl import *
 
 #author: MichaelOdermatt
@@ -45,8 +46,8 @@ def chat():
                         responses = tg['responses']
 
                 print(random.choice(responses))
-                if isInputExplain(tag):
-                    handleExplain()
+                #if isInputExplain(tag):
+                #    handleExplain()
                 prevTag = tag
             else:
                 print(getErrorString())
@@ -61,18 +62,20 @@ def handleYesOrNoInput(tag, previousTag):
     global prevTag
     try:
         s = actionChart[previousTag][tag]
+        dp = wikipedia.page(s)
+        s = dp.content
+        s = s.partition("\n")[0]
     except:
         s = getErrorString()
     prevTag = 'None'
     return s
 
-def isInputExplain(tag):
-    if tag == "explain":
+def isInputRequest1(tag):
+    if tag == "request1":
         return True
 
-def handleExplain():
-    inp = input("You: ")
-    return "Thanks for letting me know."
+def handleRequest1():
+    return "rand"
 
 def getErrorString():
 	return random.choice(errorString)
@@ -97,8 +100,8 @@ def get_response(inp):
                     if tg['tag'] == tag:
                         responses = tg['responses']
 
-                if isInputExplain(tag):
-                    return handleExplain()
+                #if isInputRequest1(tag):
+                #    return handleRequest1()
                 prevTag = tag
                 print(prevTag)
                 return random.choice(responses)
